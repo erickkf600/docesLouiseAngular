@@ -1,0 +1,35 @@
+body {
+    margin: 0
+}
+
+.primary-button{
+    background: $primary-color;
+    color: $color-white;
+    font: {
+        family: $font1
+    }
+}
+//CONTAINER 
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    @include respond-to('device'){
+        max-width: 540px;
+    }
+    @include respond-to('small'){
+        max-width: 720px;
+    }
+    @include respond-to('medium'){
+        max-width: 960px;
+    }
+    @include respond-to('large'){
+        max-width: 1100px;
+    }
+    @include respond-to('extra-large'){
+        max-width: 1240px;
+    }
+  }
+
