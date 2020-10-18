@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 $primary-color: #FF9292;
+$primary-color-light: #FFCDC8;
+$primary-mobile-color: #fccac6;
 $gradient-color: linear-gradient(90deg,#FFCDC8 0%, #ff9292 100%);
+
+$gradient-color-light: linear-gradient(200deg, #FFCDC8 18%, #ff9292 65%);
+$gradient-color-medium: linear-gradient(200deg, #FFCDC8 18%, #ff9292 65%);
+
+$background-button: #FD9190;
+$background-button-hover: #FF8180;
 
 $color-red: #ff0000;
 $color-yellow: #ffff00;

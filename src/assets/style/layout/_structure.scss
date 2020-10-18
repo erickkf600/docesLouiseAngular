@@ -2,18 +2,42 @@ body {
     margin: 0
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: $font1;
+    color: $color-txt
+}
+button{
+    cursor: pointer;
+    &:focus{
+        border: none;
+        outline: none;
+    }   
+}
 .primary-button{
-    background: $primary-color;
+    background: $background-button;
     color: $color-white;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 32px;
+    padding: 15px 20px;
+    width: 260px;
+    letter-spacing: 1.4px;
+    box-shadow: 3px 3px 10px $primary-color-light;
+    @include transition(.3s);
     font: {
-        family: $font1
+        family: $font1;
+        weight: bold;
+        size: 18px;
+    }
+    &:hover{
+        background: $background-button-hover
     }
 }
 //CONTAINER 
 .container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    // padding-right: 15px;
+    // padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
     @include respond-to('device'){
@@ -26,10 +50,10 @@ body {
         max-width: 960px;
     }
     @include respond-to('large'){
-        max-width: 1100px;
+        max-width: 85vw;
     }
-    @include respond-to('extra-large'){
-        max-width: 1240px;
-    }
+    // @include respond-to('extra-large'){
+    //     max-width: 1240px;
+    // }
   }
 

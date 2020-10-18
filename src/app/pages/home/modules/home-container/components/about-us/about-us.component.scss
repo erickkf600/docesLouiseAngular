@@ -1,0 +1,64 @@
+@import './../../../../../../../assets/style/utils/mixins';
+@import './../../../../../../../assets/style/utils/variables';
+
+.about-us{
+    position: relative;
+    padding-top: 100px;
+    
+    &__grid{
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        @include respond-to('large'){
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &__title{
+        margin: 30px 0 30px 0;
+        font: {
+            size: 55px;
+        }
+    }
+    &__text{
+        max-width: 475px;
+        color: $color-txt;
+        font: {
+            family: $font1;
+            size: 16px;
+            weight: medium
+
+        }
+    }
+
+    &__button{
+        margin-top: 30px;
+    }
+
+    &__bols{
+        &-gradient{
+         width: 20px;
+         height: 20px;
+         background: $gradient-color-light;
+         position: absolute;
+         right: 0;
+         bottom: 9vh;
+         z-index: -1;
+         border-radius: 100%;
+         &:nth-child(2){
+            bottom: 50vh;
+            left: -42px;
+         }
+         &:nth-child(3){
+            top: 39vh;
+            right: 19vw;
+         }
+         &:nth-child(4){
+            bottom: 0;
+            right: 40vw;
+         }
+      }
+
+    }
+}
