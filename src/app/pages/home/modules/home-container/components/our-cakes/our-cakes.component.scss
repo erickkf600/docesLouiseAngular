@@ -1,0 +1,64 @@
+@import './../../../../../../../assets/style/utils/mixins';
+@import './../../../../../../../assets/style/utils/variables';
+
+.our-cakes{
+    position: relative;
+    min-height: 100vh;
+    &__title{
+        margin: 30px 0 30px 0;
+        padding-top: 100px;
+        text-align: center;
+        font: {
+            size: 42px;
+        }
+        @include respond-to('extra-large'){
+             font-size: 55px;
+         }
+    }
+
+    &__grid{
+       display: grid;
+        grid-template-columns: repeat(3, 1fr) 0.8fr;
+        grid-template-rows: repeat(2, 165px) repeat(2, 110px);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        margin-bottom: 3rem;
+        @include respond-to('extra-large'){
+            grid-template-rows: repeat(2, 200px) repeat(2, 140px);
+        }
+        &-item{
+            border-radius: 15px;
+            box-shadow: 3px 2px 10px rgba(0,0,0,0.2);
+            background-position: 50% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            &:nth-child(1){
+              grid-area: 1 / 1 / 3 / 4;
+                background-image: url('https://cdn.kinsights.com/cache/10/96/10960e58d8c101157ecf627b3e44e060.jpg');
+            }
+            &:nth-child(2){
+            grid-area: 1 / 4 / 2 / 5;
+                background-image: url('https://images.squarespace-cdn.com/content/v1/589f9416d482e9cad9363b14/1582218512079-CSHNVO3570WSCXV2I872/ke17ZwdGBToddI8pDm48kDUmZJPtjcvIHBJxs1Dy_oF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0plef_PmwB6-3GP4qDbCUv9oJE4pa-KLtGr30--pRapK7ttJsC8W8Y1lJgpl17C6FA/IMG_2554.jpg?format=2500w');
+            }
+            &:nth-child(3){
+                grid-area: 2 / 4 / 3 / 5;
+                background-image: url('https://image.freepik.com/free-photo/yummy-cupcake-light-pink-background-close-up_93675-29801.jpg');
+            }
+            &:nth-child(4){
+                grid-area: 3 / 1 / 5 / 3;
+                background-image: url('https://www.gourmetbakery.in/img/slider/slider_3.jpg');
+            }
+            &:nth-child(5){
+                grid-area: 3 / 3 / 5 / 4;
+                background-image: url('https://www.wilton.com/dw/image/v2/AAWA_PRD/on/demandware.static/-/Sites-wilton-project-master/default/dw2ab64df7/images/project/WLRECIP-41/vanilla-buttercream-frosting-on-cupcakes.jpg?sw=1440&sh=750&sm=fit');
+            }
+            &:nth-child(6){
+                grid-area: 3 / 4 / 5 / 5;
+                background-image: url('https://static.archiesonline.com/public/images/product/large/8498MT.jpg');
+            }
+        }
+    }
+}
+
+
+
