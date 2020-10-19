@@ -1,0 +1,22 @@
+.btn-loader {
+    &:after{
+        content: "";
+        display: block;
+        width: 13px;
+        height: 11px;
+        margin: 0 auto;
+        border-radius: 50%;
+        border: 3px solid $color-white;
+        border-color: $color-white transparent $color-white transparent;
+        animation: btn-loader 1.2s linear infinite;
+    }
+  }
+
+  @include keyframes(btn-loader){
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+     }
+  }

@@ -2,9 +2,18 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { HomeContainerRoutingModule } from './home-container-routing.module';
 import { HomeContainerComponent } from './home-container.component';
+import { HomeInicialComponent } from './components/home-inicial/home-inicial.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { HomeDeliveryComponent } from './components/home-delivery/home-delivery.component';
+import { OurCakesComponent } from './components/our-cakes/our-cakes.component';
 
 @NgModule({
-  declarations: [HomeContainerComponent],
+  declarations: [
+    HomeContainerComponent, 
+    HomeInicialComponent, 
+    AboutUsComponent, 
+    HomeDeliveryComponent, OurCakesComponent
+  ],
   imports: [
     CommonModule,
     HomeContainerRoutingModule

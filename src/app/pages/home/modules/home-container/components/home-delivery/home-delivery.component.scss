@@ -1,0 +1,95 @@
+@import './../../../../../../../assets/style/utils/mixins';
+@import './../../../../../../../assets/style/utils/variables';
+
+.delivery{
+    position: relative;
+   
+    &__grid{
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        @include respond-to('large'){
+            grid-template-columns: 45vw 1fr;
+            gap: 50px;
+        }
+        @include respond-to('extra-large'){
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+    }
+
+    &__moto-girl{
+        width: 100%;
+        @include respond-to('extra-large'){
+            width: 80%
+        }
+    }
+
+    &__title{
+        margin: 30px 0 30px 0;
+        font: {
+            size: 42px;
+        }
+        @include respond-to('extra-large'){
+             font-size: 55px;
+         }
+    }
+    &__text{
+        max-width: 515px;
+        color: $color-txt;
+        font: {
+            family: $font1;
+            size: 16px;
+            weight: medium
+        }
+        @include respond-to('extra-large'){
+            max-width: 640px;
+        }
+    }
+
+    &__button{
+        margin-top: 30px;
+        width: 300px
+    }
+
+    &__bols{
+        &-gradient{
+         width: 20px;
+         height: 20px;
+         background: $gradient-color-light;
+         position: absolute;
+         right: 0;
+         bottom: 9vh;
+         z-index: -1;
+         border-radius: 100%;
+          &:nth-child(1){
+            right: 23vw;
+            bottom: 13px;
+         }
+         &:nth-child(2){
+            bottom: 42vh;
+            left: 4vw;
+         }
+         &:nth-child(3){
+            top: 40vh;
+            right: 7vw;
+            width: 40px;
+            height: 40px;
+         }
+      }
+    }
+
+    &__illustration{
+        width: 15%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        display: none;
+        @include respond-to('medium'){
+            display: block;
+        }        
+    }
+}
