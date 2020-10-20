@@ -6,13 +6,14 @@ import { HomeInicialComponent } from './components/home-inicial/home-inicial.com
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HomeDeliveryComponent } from './components/home-delivery/home-delivery.component';
 import { OurCakesComponent } from './components/our-cakes/our-cakes.component';
+import { AddressComponent } from './components/address/address.component';
 
 @NgModule({
   declarations: [
     HomeContainerComponent, 
     HomeInicialComponent, 
     AboutUsComponent, 
-    HomeDeliveryComponent, OurCakesComponent
+    HomeDeliveryComponent, OurCakesComponent, AddressComponent
   ],
   imports: [
     CommonModule,
