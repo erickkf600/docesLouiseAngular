@@ -2,24 +2,39 @@
 @import './../../../../../../../assets/style/utils/variables';
 
 .address{
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
-    // margin-top: 40vh;
+    margin-top: 50px;
+    display: flex;
+    @include respond-to('large'){
+        margin-top: 200px;
+    }
+    &__wave{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-image: url('./../../../../../../../assets/images/waves-footer-mobile.svg');
+        height: 29%;
+        top: 14%;
+        background-repeat: no-repeat;
+        @include respond-to('small'){
+            height: 100%;
+            top: 1px;
+            background-image: url('./../../../../../../../assets/images/waves-footer.svg');
+        }
+    }
     &__container{
-        min-height: 70vh;
+        width: 100vw;
+        height: 70%;
+        margin: auto auto 0 auto;
         background: $primary-mobile-color;
         @include respond-to('small'){
             background: $gradient-color;
+            height: 90%;
+        }
+        @include respond-to('large'){
+            height: 70%;
         }
     }
-
-   &__waves{
-       height: 271.65px;
-       width: 100%;
-       background-image: url('./../../../../../../../assets/images/waves-footer.svg');
-       background-repeat: no-repeat;
-    @include respond-to('extra-large'){
-        height: 364px;
-    }
-   }
 }
+
