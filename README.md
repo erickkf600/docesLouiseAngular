@@ -1,27 +1,71 @@
-# DocesDaLouise
+# Doces da Louise
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+## Aplicação desenvolvida com Angular 9.0.6
 
-## Development server
+<br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![GitHub repo size](https://img.shields.io/github/repo-size/erickkf600/docesLouiseAngular?style=for-the-badge)
 
-## Code scaffolding
+Uma estilosa aplicação web para promover trabalhos de cake desing e confeitaria, podendo fazer encomendas, verificar se há entregas para sua região, e criar seus proprios bolos.
+-------------
+***
+<br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<img src="https://i.imgur.com/nDoqvL4.png" width="100%" alt="Prevew"/>
+<img src="https://i.imgur.com/QbeSXbO.png" width="100%" alt="Prevew"/>
+<img src="https://i.imgur.com/AgtvSp2.png" width="100%" alt="Prevew"/>
+<img src="https://i.imgur.com/mIXy2n2.png" width="100%" alt="Prevew"/>
+<img src="https://i.imgur.com/2Q5F856.png" width="100%" alt="Prevew"/>
 
-## Build
+<br>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Ajustes e melhorias
 
-## Running unit tests
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [ ] Header
+- [ ] Imagem na home
+- [ ] Página vitrine
+- [ ] Adicionar os textos
+- [ ] Modal de consultar disponibilidade
+- [ ] Ajustar os cards de últimos trabalhos
+- [ ] Adicionar uma sessão com depoimentos de clientes
+- [ ] Painel para cadastrar produtos
+- [ ] Área de criação
+- [ ] Footer
 
-## Running end-to-end tests
+## Iniciando o App
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- Clone o repositório 
+- Dentro da pasta clonada rode o commando
 
-## Further help
+```
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- finalizada a instalação rode o comando
+```
+ng serve 
+```
+## Libs Utilizadas
+
+Aqui estão as libs que foram utilizadas neste projeto:
+
+* [normalize](https://necolas.github.io/normalize.css/)
+* [sweetalert2](https://sweetalert2.github.io/)
+
+
+## Responsavel
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars3.githubusercontent.com/u/35529628" width="100px;" alt="Foto do Erick Ferreira no GitHub"/><br>
+        <sub>
+          <b>Erick Ferreira</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
